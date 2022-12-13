@@ -10,7 +10,7 @@ from keras.models import load_model
 import numpy as np
 import cv2
 
-mydb=mysql.connector.connect(host="sql6.freesqldatabase.com",user="sql6526298",password="rremJWrjju",database="sql6526298")
+mydb=mysql.connector.connect(host="localhost",user="root",password="9930416664@Adu",database="inventory")
 cursor=mydb.cursor()
 flag=-1
 
@@ -36,7 +36,7 @@ class Menu_page(QMainWindow):
             # Load the model
             model = load_model('models/keras_model.h5')
             data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
-            url = "http://192.168.61.249:8080/video"
+            url = "http://10.20.30.16:8080/video"
             global flag
             flag=-1
 
@@ -79,7 +79,7 @@ class Menu_page(QMainWindow):
             # Load the model
             model = load_model('models/keras_model.h5')
             data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
-            url = "http://192.168.61.249:8080/video"
+            url = "http://10.20.30.16:8080/video"
             global flag
             flag=-1
 

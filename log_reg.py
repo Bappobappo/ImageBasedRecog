@@ -8,7 +8,7 @@ import mysql.connector
 import logo_rc
 from menu import Menu_page
 
-mydb=mysql.connector.connect(host="sql6.freesqldatabase.com",user="sql6526298",password="rremJWrjju",database="sql6526298")
+mydb=mysql.connector.connect(host="localhost",user="root",password="9930416664@Adu",database="inventory")
 cursor=mydb.cursor()
 
 class logReg(QMainWindow):

@@ -36,6 +36,7 @@ class start(QMainWindow):
                 msg.setWindowTitle("Fail")
                 msg.setText("Please load model")
                 x=msg.exec_()
+                
             else:
                 from log_reg import logReg
                 reg=logReg()
@@ -90,16 +91,12 @@ class start(QMainWindow):
                     x=msg.exec_()
                 
                     
-                
-                
-        
         self.prog=self.findChild(QProgressBar,"prog")  
         self.load_btn=self.findChild(QPushButton,"load")
         self.start_btn=self.findChild(QPushButton,"start_btn")
         
         self.start_btn.clicked.connect(load_page)
         self.load_btn.clicked.connect(load_model)
-        
         self.show()
         
 app=QApplication(sys.argv)

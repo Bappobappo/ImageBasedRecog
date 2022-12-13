@@ -1,4 +1,4 @@
-0 Keyboard
+0 KeyBoard
 1 Pins
 2 Sharpener
 3 Eraser
